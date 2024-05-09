@@ -120,7 +120,9 @@ input {
   background-position: center;
   margin: 0 auto;
 }
-@media (min-resolution: 192dpi) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .page-hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -893,7 +895,9 @@ input {
       ),
       url(../images/hero/tablet/hero-background-image-tablet.jpg);
   }
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .page-hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1033,7 +1037,9 @@ input {
       ),
       url(../images/hero/desktop/hero-background-image-desktop.jpg);
   }
-  @media (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .page-hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
