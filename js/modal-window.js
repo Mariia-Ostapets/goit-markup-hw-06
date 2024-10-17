@@ -9,25 +9,24 @@
       openModalBtn.getAttribute('aria-expanded') === 'true' || false;
     openModalBtn.setAttribute('aria-expanded', !isModalOpen);
     modalWindow.classList.toggle('is-open');
-    
 
     const scrollLockMethod = !isModalOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
-    
-    if(anchors.length === 0) return;
-    
-    if(!isModalOpen) {
+
+    if (anchors.length === 0) return;
+
+    if (!isModalOpen) {
       anchors.forEach(anchor => {
-        anchor.addEventListener("click", toggleModal)
-      })
+        anchor.addEventListener('click', toggleModal);
+      });
       return;
     }
-    
+
     anchors.forEach(anchor => {
-        anchor.removeEventListener("click", toggleModal)
-      })
+      anchor.removeEventListener('click', toggleModal);
+    });
   };
 
   openModalBtn.addEventListener('click', toggleModal);
@@ -41,3 +40,7 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+document.querySelector('.js-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+});
