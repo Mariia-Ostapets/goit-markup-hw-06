@@ -1,2 +1,2 @@
 # goit-markup-hw-06
-This is homework project №6
+A website of WebStudio company. Adaptive design, transform effects, modal windows, mobile menu (open/close).
